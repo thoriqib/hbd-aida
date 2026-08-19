@@ -10,10 +10,10 @@
   // REPLACE PHOTO HERE — ganti "images/photo-placeholder.svg" di tiap slot
   // dengan foto asli Aida, contoh: "images/aida-1.jpg"
   const slides = [
-    { label: 'Foto Aida #1', src: 'images/photo-placeholder.svg' },
-    { label: 'Foto Aida #2', src: 'images/photo-placeholder.svg' },
-    { label: 'Foto Aida #3', src: 'images/photo-placeholder.svg' },
-    { label: 'Foto Aida #4', src: 'images/photo-placeholder.svg' },
+    { label: 'Foto Aida #1', src: 'images/carousel-1.jpeg' },
+    { label: 'Foto Aida #2', src: 'images/carousel-2.jpeg' },
+    { label: 'Foto Aida #3', src: 'images/carousel-3.jpeg' },
+    { label: 'Foto Aida #4', src: 'images/carousel-4.jpeg' },
   ];
 
   slides.forEach((slide, i) => {
