@@ -14,9 +14,11 @@
 
 <nav class="progress-dots">
   <a href="#hero" title="Beranda"></a>
-  <a href="#galeri" title="Galeri"></a>
+  <a href="#galeri" title="Galeri Aida"></a>
+  <a href="#kenangan" title="Kenangan Nongky Mania"></a>
   <a href="#surat" title="Surat"></a>
   <a href="#doa" title="Doa & Harapan"></a>
+  <a href="#pesan" title="Pesan Nongky Mania"></a>
 </nav>
 
 <button class="music-toggle" id="musicToggle" aria-label="Putar lagu selamat ulang tahun">🎵</button>
@@ -31,7 +33,7 @@
 </section>
 
 <section id="galeri">
-  <h2 class="section-heading"><span class="section-heading-emoji">📸</span> Galeri Kenangan</h2>
+  <h2 class="section-heading"><span class="section-heading-emoji">📸</span> Galeri Foto Aida</h2>
   <p class="section-sub">Slot foto Aida bakal ditaruh di sini~</p>
 
   <div class="carousel-wrap">
@@ -46,6 +48,16 @@
     <div class="carousel-dots" id="carouselDots"></div>
     <p class="carousel-hint">💡 Ganti tiap placeholder ini dengan foto asli Aida. Taruh file fotonya di folder <code>images/</code>, lalu edit path-nya di <code>js/carousel.js</code> (cari komentar <code>REPLACE PHOTO HERE</code>).</p>
   </div>
+</section>
+
+<section id="kenangan">
+  <h2 class="section-heading"><span class="section-heading-emoji">🖼️</span> Kenangan Bersama Nongky Mania</h2>
+  <p class="section-sub">Grid foto kebersamaan geng Nongky Mania~ (16 slot, siap diganti)</p>
+
+  <div class="gallery-grid" id="galleryGrid">
+    <!-- 16 slot foto diisi otomatis oleh js/gallery.js -->
+  </div>
+  <p class="carousel-hint">💡 Ganti tiap kotak ini dengan foto kenangan asli. Taruh file fotonya di folder <code>images/</code>, lalu edit path-nya di <code>js/gallery.js</code> (cari komentar <code>REPLACE PHOTO HERE</code>).</p>
 </section>
 
 <section id="surat">
@@ -90,9 +102,18 @@
   </div>
 </section>
 
+<section id="pesan">
+  <h2 class="section-heading"><span class="section-heading-emoji">💌</span> Pesan Dari Bebeb Nongky Mania</h2>
+  <p class="section-sub">Kata-kata hangat dari geng Nongky Mania buat Aida~</p>
+
+  <div class="message-list" id="messageList">
+    <!-- 5 baris pesan diisi otomatis oleh js/messages.js, foto & teks berselang-seling kiri/kanan -->
+  </div>
+</section>
+
 <footer>
   <div class="footer-title">Selamat Ulang Tahun, Aida! 🎉</div>
-  <div class="footer-sub">Made with 💗 khusus untuk hari spesialmu</div>
+  <div class="footer-sub">Made with 💗 from Nongky Mania khusus untuk hari spesialmu</div>
 </footer>
 
 <!-- MODAL -->
@@ -114,6 +135,8 @@
 
 <script src="js/background.js"></script>
 <script src="js/carousel.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/messages.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/audio.js"></script>
 </body>
