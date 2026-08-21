@@ -16,7 +16,6 @@
   <a href="#hero" title="Beranda"></a>
   <a href="#galeri" title="Galeri Aida"></a>
   <a href="#kenangan" title="Kenangan Nongky Mania"></a>
-  <a href="#surat" title="Surat"></a>
   <a href="#doa" title="Doa & Harapan"></a>
   <a href="#pesan" title="Pesan Nongky Mania"></a>
 </nav>
@@ -58,20 +57,6 @@
     <!-- 16 slot foto diisi otomatis oleh js/gallery.js -->
   </div>
   <p class="carousel-hint">💡 Ganti tiap kotak ini dengan foto kenangan asli. Taruh file fotonya di folder <code>images/</code>, lalu edit path-nya di <code>js/gallery.js</code> (cari komentar <code>REPLACE PHOTO HERE</code>).</p>
-</section>
-
-<section id="surat">
-  <h2 class="section-heading"><span class="section-heading-emoji">💌</span> Ada Surat Buat Kamu</h2>
-  <p class="section-sub">Klik amplopnya, Aida~</p>
-
-  <button class="letter-cta" id="openLetterBtn">
-    <div class="envelope">
-      <div class="env-body"></div>
-      <div class="env-flap"></div>
-      <div class="env-heart">💗</div>
-    </div>
-    <span class="letter-cta-label">Buka Surat Ucapan 🎁</span>
-  </button>
 </section>
 
 <section id="doa">
@@ -116,19 +101,20 @@
   <div class="footer-sub">Made with 💗 from Nongky Mania khusus untuk hari spesialmu</div>
 </footer>
 
-<!-- MODAL -->
+<!-- MODAL: dipakai bergantian untuk surat tiap anggota Nongky Mania,
+     kontennya diisi dinamis oleh js/modal.js + js/messages.js -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="letter-card">
     <button class="letter-close" id="closeLetterBtn">✕</button>
-    <h3 class="letter-heading">Untuk Aida 🍂</h3>
-    <p class="letter-to">Selamat Ulang Tahun, Aida Devanty Putri!</p>
-    <div class="letter-body">
-      <p>Hai Aida! 🥳 Di hari yang spesial ini, aku cuma mau bilang: selamat ulang tahun! Semoga semua kebaikan yang selama ini kamu tebar ke orang-orang di sekitarmu, balik lagi ke kamu berkali-kali lipat.</p>
-      <p>Makasih ya udah jadi teman yang baik, seru, dan selalu bisa diandalkan. Semoga di usia yang baru ini kamu makin sehat, makin bahagia, makin sukses, dan makin dikelilingi orang-orang yang sayang sama kamu.</p>
-      <p>Semoga semua mimpi dan rencana yang kamu punya pelan-pelan terwujud satu per satu. Jangan lupa istirahat, jangan lupa bahagia, dan jangan lupa traktir kalau rezekinya lagi lancar hehe 😄</p>
-      <p>Sekali lagi, selamat ulang tahun, Aida! Semoga harimu penuh kejutan hangat dari orang-orang yang menyayangimu.</p>
+    <div class="letter-photo">
+      <img id="letterPhotoImg" src="" alt="">
     </div>
-    <div class="letter-signoff">Dengan sayang,<br>Temanmu 💕</div>
+    <h3 class="letter-heading">Surat Untuk Aida 🍂</h3>
+    <p class="letter-to" id="letterFrom">Dari: -</p>
+    <div class="letter-body" id="letterBody">
+      <!-- Paragraf surat diisi otomatis saat tombol "Baca Surat" diklik -->
+    </div>
+    <div class="letter-signoff" id="letterSignoff">Dengan sayang,<br>-</div>
     <div class="letter-hearts"><span>💗</span><span>💖</span><span>💝</span><span>💓</span></div>
   </div>
 </div>

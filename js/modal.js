@@ -1,12 +1,17 @@
 // ============================================================
-// modal.js — popup surat ucapan selamat ulang tahun
+// modal.js — popup surat ucapan, dipakai bergantian untuk
+// tiap anggota Nongky Mania. Kontennya diisi dinamis lewat
+// window.openPersonLetter(data) yang dipanggil dari js/messages.js
 // ============================================================
 
 (function initLetterModal() {
   const modalOverlay = document.getElementById('modalOverlay');
-  const openLetterBtn = document.getElementById('openLetterBtn');
   const closeLetterBtn = document.getElementById('closeLetterBtn');
-  if (!modalOverlay || !openLetterBtn || !closeLetterBtn) return;
+  const letterPhotoImg = document.getElementById('letterPhotoImg');
+  const letterFrom = document.getElementById('letterFrom');
+  const letterBody = document.getElementById('letterBody');
+  const letterSignoff = document.getElementById('letterSignoff');
+  if (!modalOverlay || !closeLetterBtn) return;
 
   const confettiColors = ['#c97c5d', '#d3a034', '#8a9a6b', '#d9a08c', '#ffffff'];
 
@@ -34,7 +39,17 @@
     document.body.style.overflow = '';
   }
 
-  openLetterBtn.addEventListener('click', openModal);
+  // Dipanggil dari js/messages.js setiap tombol "Baca Surat" diklik.
+  // data = { name, photo, letter: [paragraf1, paragraf2, ...] }
+  window.openPersonLetter = function (data) {
+    letterPhotoImg.src = data.photo;
+    letterPhotoImg.alt = data.name;
+    letterFrom.textContent = 'Dari: ' + data.name;
+    letterBody.innerHTML = data.letter.map((p) => `<p>${p}</p>`).join('');
+    letterSignoff.innerHTML = 'Dengan sayang,<br>' + data.name + ' 💕';
+    openModal();
+  };
+
   closeLetterBtn.addEventListener('click', closeModal);
   modalOverlay.addEventListener('click', (e) => {
     if (e.target === modalOverlay) closeModal();
