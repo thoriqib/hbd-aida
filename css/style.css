@@ -173,6 +173,17 @@ section{
   75%{ transform: rotate(1.5deg); }
 }
 
+.hero-tagline{
+  font-family:'Fredoka', sans-serif;
+  font-weight:500;
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  color: var(--sage-deep);
+  letter-spacing: .5px;
+  margin: 2px 0 6px 0;
+  opacity:0;
+  animation: fadeUp .9s .35s ease forwards;
+}
+
 .hero-name{
   font-family:'Fredoka', sans-serif;
   font-weight:600;

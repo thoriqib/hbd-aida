@@ -110,4 +110,34 @@
       startMusic();
     }
   });
+
+  // ---------- Autoplay ----------
+  // Browser modern memblokir audio otomatis sebelum ada interaksi user.
+  // Jadi kita coba langsung play saat halaman dibuka; kalau diblokir,
+  // musik otomatis jalan begitu ada interaksi pertama (klik/scroll/sentuh)
+  // tanpa user perlu sadar menekan tombol musik.
+  function tryAutoplay() {
+    const ctx = ensureContext();
+    if (ctx.state === 'running') {
+      startMusic();
+    } else {
+      const resumeAndPlay = () => {
+        ctx.resume().then(() => {
+          if (!isPlaying) startMusic();
+        });
+        removeAutoplayListeners();
+      };
+      const events = ['click', 'touchstart', 'keydown', 'scroll'];
+      const removeAutoplayListeners = () => {
+        events.forEach((ev) => document.removeEventListener(ev, resumeAndPlay));
+      };
+      events.forEach((ev) => document.addEventListener(ev, resumeAndPlay, { once: true, passive: true }));
+    }
+  }
+
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    tryAutoplay();
+  } else {
+    document.addEventListener('DOMContentLoaded', tryAutoplay);
+  }
 })();
