@@ -1,130 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday, Aida! 🍂</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@500;600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, Aida! 🍂</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@500;600&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="bg-decor" id="bgDecor"></div>
 
-<div class="bg-decor" id="bgDecor"></div>
+    <nav class="progress-dots">
+      <a href="#hero" title="Beranda"></a>
+      <a href="#galeri" title="Galeri Aida"></a>
+      <a href="#kenangan" title="Kenangan Nongky Mania"></a>
+      <a href="#doa" title="Doa & Harapan"></a>
+      <a href="#pesan" title="Pesan Nongky Mania"></a>
+    </nav>
 
-<nav class="progress-dots">
-  <a href="#hero" title="Beranda"></a>
-  <a href="#galeri" title="Galeri Aida"></a>
-  <a href="#kenangan" title="Kenangan Nongky Mania"></a>
-  <a href="#doa" title="Doa & Harapan"></a>
-  <a href="#pesan" title="Pesan Nongky Mania"></a>
-</nav>
+    <button
+      class="music-toggle"
+      id="musicToggle"
+      aria-label="Putar lagu selamat ulang tahun"
+    >
+      🎵
+    </button>
+    <div class="music-hint">putar lagu ulang tahun 🎶</div>
 
-<button class="music-toggle" id="musicToggle" aria-label="Putar lagu selamat ulang tahun">🎵</button>
-<div class="music-hint">putar lagu ulang tahun 🎶</div>
+    <section id="hero">
+      <h1 class="hero-title">Happy Birthday!</h1>
+      <p class="hero-tagline">For our Adik Bebeb</p>
+      <h2 class="hero-name">Aida Devanty Putri 🍂</h2>
+      <p class="hero-sub">
+        Semoga hari ini penuh tawa, kejutan hangat, dan semua hal yang bikin
+        kamu senyum lebar 🥰
+      </p>
+      <div class="cake-emoji">🎂</div>
+      <div class="scroll-hint">↓ scroll buat lihat kejutannya ↓</div>
+    </section>
 
-<section id="hero">
-  <h1 class="hero-title">Happy Birthday!</h1>
-  <p class="hero-tagline">For our Adik Bebeb</p>
-  <h2 class="hero-name">Aida Devanty Putri 🍂</h2>
-  <p class="hero-sub">Semoga hari ini penuh tawa, kejutan hangat, dan semua hal yang bikin kamu senyum lebar 🥰</p>
-  <div class="cake-emoji">🎂</div>
-  <div class="scroll-hint">↓ scroll buat lihat kejutannya ↓</div>
-</section>
+    <section id="galeri">
+      <h2 class="section-heading">
+        <span class="section-heading-emoji">📸</span> Galeri Foto Aida
+      </h2>
 
-<section id="galeri">
-  <h2 class="section-heading"><span class="section-heading-emoji">📸</span> Galeri Foto Aida</h2>
-  <p class="section-sub">Slot foto Aida bakal ditaruh di sini~</p>
+      <div class="carousel-wrap">
+        <div class="carousel-frame">
+          <div class="carousel-badge">Adik Bebeb 🥰</div>
+          <button
+            class="carousel-btn prev"
+            id="prevBtn"
+            aria-label="Sebelumnya"
+          >
+            ‹
+          </button>
+          <button
+            class="carousel-btn next"
+            id="nextBtn"
+            aria-label="Selanjutnya"
+          >
+            ›
+          </button>
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Slide diisi otomatis oleh js/carousel.js -->
+          </div>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
 
-  <div class="carousel-wrap">
-    <div class="carousel-frame">
-      <div class="carousel-badge">Placeholder</div>
-      <button class="carousel-btn prev" id="prevBtn" aria-label="Sebelumnya">‹</button>
-      <button class="carousel-btn next" id="nextBtn" aria-label="Selanjutnya">›</button>
-      <div class="carousel-track" id="carouselTrack">
-        <!-- Slide diisi otomatis oleh js/carousel.js -->
+    <section id="kenangan">
+      <h2 class="section-heading">
+        <span class="section-heading-emoji">🖼️</span> Kenangan Bersama Nongky
+        Mania
+      </h2>
+      <p class="section-sub">Grid foto kebersamaan bebeb Nongky Mania~</p>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- 16 slot foto diisi otomatis oleh js/gallery.js -->
+      </div>
+    </section>
+
+    <section id="doa">
+      <h2 class="section-heading">
+        <span class="section-heading-emoji">🌸</span> Doa & Harapan Untukmu
+      </h2>
+      <p class="section-sub">
+        Sedikit harapan hangat buat perjalanan setahun ke depan
+      </p>
+
+      <div class="wish-grid">
+        <div class="wish-card">
+          <span class="wish-icon">🌟</span>
+          <div class="wish-title">Selalu Bersinar</div>
+          <div class="wish-text">
+            Semoga langkahmu tahun ini makin mantap dan penuh keberuntungan.
+          </div>
+        </div>
+        <div class="wish-card">
+          <span class="wish-icon">💖</span>
+          <div class="wish-title">Sehat & Bahagia</div>
+          <div class="wish-text">
+            Semoga kesehatan dan kebahagiaan selalu menemani setiap harimu.
+          </div>
+        </div>
+        <div class="wish-card">
+          <span class="wish-icon">🎯</span>
+          <div class="wish-title">Cita-cita Tercapai</div>
+          <div class="wish-text">
+            Semoga semua rencana dan impianmu perlahan jadi kenyataan.
+          </div>
+        </div>
+        <div class="wish-card">
+          <span class="wish-icon">🌾</span>
+          <div class="wish-title">Dikelilingi Cinta</div>
+          <div class="wish-text">
+            Semoga selalu dikelilingi orang-orang yang menyayangimu dengan
+            tulus.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pesan">
+      <h2 class="section-heading">
+        <span class="section-heading-emoji">💌</span> Pesan Dari Bebeb Nongky
+        Mania
+      </h2>
+      <p class="section-sub">
+        Kata-kata hangat dari geng Nongky Mania buat Aida~
+      </p>
+
+      <div class="message-list" id="messageList">
+        <!-- 5 baris pesan diisi otomatis oleh js/messages.js, foto & teks berselang-seling kiri/kanan -->
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-title">Selamat Ulang Tahun, Aida! 🎉</div>
+      <div class="footer-sub">
+        Made with 💗 from Nongky Mania khusus untuk hari spesialmu
+      </div>
+    </footer>
+
+    <!-- MODAL: dipakai bergantian untuk surat tiap anggota Nongky Mania,
+     kontennya diisi dinamis oleh js/modal.js + js/messages.js -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="letter-card">
+        <button class="letter-close" id="closeLetterBtn">✕</button>
+        <div class="letter-photo">
+          <img id="letterPhotoImg" src="" alt="" />
+        </div>
+        <h3 class="letter-heading">Surat Untuk Aida 🍂</h3>
+        <p class="letter-to" id="letterFrom">Dari: -</p>
+        <div class="letter-body" id="letterBody">
+          <!-- Paragraf surat diisi otomatis saat tombol "Baca Surat" diklik -->
+        </div>
+        <div class="letter-signoff" id="letterSignoff">
+          Dengan sayang,<br />-
+        </div>
+        <div class="letter-hearts">
+          <span>💗</span><span>💖</span><span>💝</span><span>💓</span>
+        </div>
       </div>
     </div>
-    <div class="carousel-dots" id="carouselDots"></div>
-    <p class="carousel-hint">💡 Ganti tiap placeholder ini dengan foto asli Aida. Taruh file fotonya di folder <code>images/</code>, lalu edit path-nya di <code>js/carousel.js</code> (cari komentar <code>REPLACE PHOTO HERE</code>).</p>
-  </div>
-</section>
 
-<section id="kenangan">
-  <h2 class="section-heading"><span class="section-heading-emoji">🖼️</span> Kenangan Bersama Nongky Mania</h2>
-  <p class="section-sub">Grid foto kebersamaan geng Nongky Mania~ (16 slot, siap diganti)</p>
-
-  <div class="gallery-grid" id="galleryGrid">
-    <!-- 16 slot foto diisi otomatis oleh js/gallery.js -->
-  </div>
-  <p class="carousel-hint">💡 Ganti tiap kotak ini dengan foto kenangan asli. Taruh file fotonya di folder <code>images/</code>, lalu edit path-nya di <code>js/gallery.js</code> (cari komentar <code>REPLACE PHOTO HERE</code>).</p>
-</section>
-
-<section id="doa">
-  <h2 class="section-heading"><span class="section-heading-emoji">🌸</span> Doa & Harapan Untukmu</h2>
-  <p class="section-sub">Sedikit harapan hangat buat perjalanan setahun ke depan</p>
-
-  <div class="wish-grid">
-    <div class="wish-card">
-      <span class="wish-icon">🌟</span>
-      <div class="wish-title">Selalu Bersinar</div>
-      <div class="wish-text">Semoga langkahmu tahun ini makin mantap dan penuh keberuntungan.</div>
-    </div>
-    <div class="wish-card">
-      <span class="wish-icon">💖</span>
-      <div class="wish-title">Sehat & Bahagia</div>
-      <div class="wish-text">Semoga kesehatan dan kebahagiaan selalu menemani setiap harimu.</div>
-    </div>
-    <div class="wish-card">
-      <span class="wish-icon">🎯</span>
-      <div class="wish-title">Cita-cita Tercapai</div>
-      <div class="wish-text">Semoga semua rencana dan impianmu perlahan jadi kenyataan.</div>
-    </div>
-    <div class="wish-card">
-      <span class="wish-icon">🌾</span>
-      <div class="wish-title">Dikelilingi Cinta</div>
-      <div class="wish-text">Semoga selalu dikelilingi orang-orang yang menyayangimu dengan tulus.</div>
-    </div>
-  </div>
-</section>
-
-<section id="pesan">
-  <h2 class="section-heading"><span class="section-heading-emoji">💌</span> Pesan Dari Bebeb Nongky Mania</h2>
-  <p class="section-sub">Kata-kata hangat dari geng Nongky Mania buat Aida~</p>
-
-  <div class="message-list" id="messageList">
-    <!-- 5 baris pesan diisi otomatis oleh js/messages.js, foto & teks berselang-seling kiri/kanan -->
-  </div>
-</section>
-
-<footer>
-  <div class="footer-title">Selamat Ulang Tahun, Aida! 🎉</div>
-  <div class="footer-sub">Made with 💗 from Nongky Mania khusus untuk hari spesialmu</div>
-</footer>
-
-<!-- MODAL: dipakai bergantian untuk surat tiap anggota Nongky Mania,
-     kontennya diisi dinamis oleh js/modal.js + js/messages.js -->
-<div class="modal-overlay" id="modalOverlay">
-  <div class="letter-card">
-    <button class="letter-close" id="closeLetterBtn">✕</button>
-    <div class="letter-photo">
-      <img id="letterPhotoImg" src="" alt="">
-    </div>
-    <h3 class="letter-heading">Surat Untuk Aida 🍂</h3>
-    <p class="letter-to" id="letterFrom">Dari: -</p>
-    <div class="letter-body" id="letterBody">
-      <!-- Paragraf surat diisi otomatis saat tombol "Baca Surat" diklik -->
-    </div>
-    <div class="letter-signoff" id="letterSignoff">Dengan sayang,<br>-</div>
-    <div class="letter-hearts"><span>💗</span><span>💖</span><span>💝</span><span>💓</span></div>
-  </div>
-</div>
-
-<script src="js/background.js"></script>
-<script src="js/carousel.js"></script>
-<script src="js/gallery.js"></script>
-<script src="js/messages.js"></script>
-<script src="js/modal.js"></script>
-<script src="js/audio.js"></script>
-</body>
+    <script src="js/background.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/messages.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/audio.js"></script>
+  </body>
 </html>
