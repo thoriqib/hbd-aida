@@ -12,52 +12,48 @@
   // dan src foto tiap anggota Nongky Mania di bawah ini.
   const messages = [
     {
-      name: "Inces",
-      photo: "images/photo-placeholder.svg",
-      preview:
-        "Selamat ulang tahun, Aida! Makasih ya selalu jadi tempat cerita paling asik.",
+      name: "Your kakak princess",
+      photo: "images/radha.jpeg",
+      preview: "Welcome to 1/4 abad my adik!",
       letter: [
-        "Hai Aida! Di hari spesialmu ini aku cuma mau bilang: selamat ulang tahun ya! Makasih udah selalu jadi tempat cerita paling asik dan selalu ada kalau lagi butuh teman ngobrol.",
-        "Semoga tahun ini kamu makin banyak dapat hal-hal seru, rejeki lancar, dan selalu dikelilingi orang-orang baik kayak kita di Nongky Mania hehe.",
-        "Sekali lagi, happy birthday Aida! Love you selalu.",
+        "Welcome to 1/4 abad my adik! Always be my cantik lucu gemes adik forever🩷",
+        "I hope your life is full of love and best best things. Happiness suits u well so please always be kind to yourself.",
+        "You deserve all good things in this world🩷",
       ],
     },
     {
-      name: "Mrs Namjoon",
-      photo: "images/photo-placeholder.svg",
+      name: "dea & namu sekeluarga",
+      photo: "images/dea.jpeg",
       preview:
-        "Happy birthday, Aida sayang! Semoga sehat terus dan makin cantik luar dalam.",
+        "Selamat ulang tahun my sweetest, smartest, kindest, partner ngopi, adik bungsu bebeb di kantor, Aida🥺💌",
       letter: [
-        "Happy birthday, Aida sayang! Nggak kerasa ya udah setahun lagi kita lewatin bareng-bareng, penuh cerita dan kenangan seru.",
-        "Semoga di umur yang baru ini kamu makin sehat, makin bahagia, dan makin cantik luar dalam. Semua rencana dan impianmu semoga lancar terwujud satu-satu.",
-        "Makasih udah jadi sahabat yang baik banget. Selamat ulang tahun, Aidaku!",
+        "Selamat ulang tahun my sweetest, smartest, kindest, partner ngopi, adik bungsu bebeb di kantor, Aida🥺💌",
+        "Semoga my adik selalu sehat, panjang umur, dilimpahi kebahagiaan, dan terwujud semua cita-cita nya yaa!!!",
+        "Terimakasih selalu menemani dan selalu ada untuk kakak di setiap waktu!🥲 Tetap jadi Ai yang ceria dan peduli dengan sekitarnya, kurang2in beli PC tu plissss (dan yap) dan semoga segera dipertemukan dengan crush(es) di masa depan yaa! 😛 with love, dea & namu sekeluarga",
       ],
     },
     {
-      name: "Pacar Jeno",
-      photo: "images/photo-placeholder.svg",
+      name: "Gadis Jember",
+      photo: "images/betty.jpeg",
       preview:
-        "Met ultah Aida! Terima kasih udah jadi bagian penting dari Nongky Mania.",
+        "Dear Aida, our adik maknae 💝 Selamat memasuki quarter life era yaa..",
       letter: [
-        "Met ultah, Aida! Terima kasih ya udah jadi bagian penting dari Nongky Mania, selalu bikin suasana rame dan hangat tiap kita kumpul.",
-        "Semoga panjang umur, sehat selalu, dan semua doa baikmu diijabah Tuhan. Semoga karier dan hubungan kamu juga makin lancar tahun ini.",
-        "Love you, Aida. Selamat ulang tahun!",
+        "Selamat memasuki quarter life era yaa.. plis tetap jadi Ai yang bahagia imut lucu dan ceria, selalu menemukan spark dalam hidup entah itu dengan lari, cokipop, new crush, ataupun teazzi tiap hari. Don’t be too hard on yourself, Ai yang sekarang udah sangat lebih dari cukup and I’m really proud of you! 🥹🥹 semoga hal-hal baik menghampiri ya Aiii",
+        "Lots of love, your number 1 Noona (Gadis Jember) 💝",
       ],
     },
     {
-      name: "Pikuri",
-      photo: "images/photo-placeholder.svg",
-      preview:
-        "Selamat bertambah usia, Aida! Semoga makin sukses di semua urusan.",
+      name: "Pikrui",
+      photo: "images/fikri.jpeg",
+      preview: "Happy birthday aidun",
       letter: [
-        "Selamat bertambah usia, Aida! Semoga di usia baru ini kamu makin sukses di semua urusan, baik kerjaan, keluarga, maupun percintaan hehe.",
-        "Semoga kamu juga makin sabar dan makin kuat menghadapi apapun tantangan ke depannya. Kita semua di Nongky Mania selalu dukung kamu kok.",
-        "Happy birthday, Aida! Semoga harimu menyenangkan.",
+        "Selamat memasuki umur quarter life crisis, meskipun kayanya sudah dimulai dulu dari tahun tahun sebelumnya ngehehe. Semoga sehat selalu dan panjang umur dan selalu jadi kebanggaan nongky mania dan orang di sekitarmu dengan pencapaian atau apapun yang kamu lakuin. Hope you found “the one” yh. semoga kamu bisa dapet yang selalu mendukung kamu dan ngga bingung. ",
+        "You’re doing good.",
       ],
     },
     {
       name: "Kakak King",
-      photo: "images/photo-placeholder.svg",
+      photo: "images/thoriq.jpeg",
       preview:
         "Selamat Ulang Tahun, Happy Birthday, Barakallah Fii Umrik, Otanjoubi Omedetou Aidaa",
       letter: [

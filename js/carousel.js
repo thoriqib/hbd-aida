@@ -23,7 +23,6 @@
       <div class="ph-frame" data-photo-slot="${i + 1}">
         <img src="${slide.src}" alt="${slide.label}">
       </div>
-      <div class="ph-label">${slide.label} · ganti di sini</div>
     `;
     track.appendChild(slideEl);
 
